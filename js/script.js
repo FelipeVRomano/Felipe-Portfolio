@@ -1,3 +1,19 @@
+$(window).on("load", function(){
+
+	$(".loader .inner").fadeOut(500, function() {
+		$(".loader").fadeOut(750);
+	});
+
+	$(".items").isotope({
+		filter: '*',
+		animationOptions: {
+			duration: 1500,
+			easing: 'linear',
+			queue:false
+		}
+	});
+})
+
 $(document).ready(function(){
 
 	$('#slides').superslides({
@@ -37,15 +53,6 @@ $(document).ready(function(){
 	});
 
 	$("[data-fancybox]").fancybox();
-
-	$(".items").isotope({
-		filter: '*',
-		animationOptions: {
-			duration: 1500,
-			easing: 'linear',
-			queue:false
-		}
-	});
 
 	$("#filters a").click(function(){
 		$("filters.current").removeClass("current");

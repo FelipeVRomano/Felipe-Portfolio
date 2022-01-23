@@ -276,11 +276,14 @@ body{
 #navigation {
 	background-color: #e74c3c;
     z-index: 100;
-    margin-right: auto;
+    width: 100%;
+}
+
+.navbar-nav{
+	margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
-    width: 100%;
 }
 
 #navigation li {

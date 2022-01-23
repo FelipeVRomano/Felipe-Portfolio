@@ -377,3 +377,44 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4{
 	height: 100%;
 	background: url(../img/loader.gif) center center no-repeat;
 }
+
+footer li a{
+	display: block;
+	text-decoration: none;
+	border-bottom: none;
+	padding: 18px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-transition: all 0.3s ease-in, 1s;
+	-moz-transition:  all 0.3s ease-in, 1s;
+	-ms-transition:  all 0.3s ease-in, 1s;
+	transition: all 0.3s ease-in, 1s;
+}
+
+footer .linkedin{
+	background: url(../img/icons/linkedIn.png) center no-repeat #444749;
+	background-size: 75%;
+}
+
+footer .linkedin:hover{
+	background-color: #fff;
+}
+
+footer .mail{
+	background: url(../img/icons/mail.png) center no-repeat #444749;
+	background-size: 75%;
+}
+
+footer .mail:hover{
+	background-color: #fff;
+}
+
+footer li{
+	display: inline-block;
+}
+
+footer ul {
+	padding-right: 30px;
+}

@@ -16,20 +16,6 @@ $(window).on("load", function(){
 
 $(document).ready(function(){
 
-	$('#slides').superslides({
-		animation: 'fade',
-		play: 5000,
-		pagination: false
-	});
-
-	var typed = new Typed(".typed", {
-		strings: ["Game Developer.", "Game Designer."],
-		typeSpeed: 70,
-		loop: true,
-		startDelay: 1000,
-		showCursor:false
-	});
-
 	$('.owl-carousel').owlCarousel({
 	    items:4,
 		itemsDesktop:[1000,4],

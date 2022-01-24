@@ -31,31 +31,18 @@ $(document).ready(function(){
 	});
 
 	$('.owl-carousel').owlCarousel({
-	    loop:true,
-	    items: 8,
-	    responsive:{
-	        0:{
-	            items:1
-	        },
-	        480:{
-	            items:2
-	        },
-	        768:{
-	        	items:3
-	        },
-	        938:{
-	            items:4
-	        },
-	        1040:{
-	        	items: 5
-	        }
-	    }
+	    items:4,
+		itemsDesktop:[1000,4],
+		itemsDesktopSmall:[900,3],
+		itemsTablet:[600,2],
+		itemsMobile:[480,1]
 	});
 
 	$("[data-fancybox]").fancybox();
 
 	$("#filters a").click(function(){
-		$("filters.current").removeClass("current");
+		
+		$("#filters .current").removeClass("current");
 		$(this).addClass("current");
 
 		var selector = $(this).attr("data-filter");

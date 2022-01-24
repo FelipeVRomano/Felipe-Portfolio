@@ -109,8 +109,13 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4{
 .homeSection,
 .skillsSection,
 .contactSection {
-	background-color: #27ae60;
+	background-color: #636e72;
 	color: #fff;
+}
+
+.aboutSection,
+.portfolioSection{
+	background-color: #f7f1e3;
 }
 
 .skillsIcon {

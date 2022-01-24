@@ -109,7 +109,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4{
 .homeSection,
 .skillsSection,
 .contactSection {
-	background-color: #636e72;
+	background-color: #596275;
 	color: #fff;
 }
 
@@ -221,7 +221,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4{
 }
 
 #navigation {
-	background-color: #e74c3c;
+	background-color: #303952;
     z-index: 100;
     width: 100%;
 }
@@ -411,5 +411,4 @@ footer ul {
 	opacity: 1;
 	pointer-events: all;
 }
-
 

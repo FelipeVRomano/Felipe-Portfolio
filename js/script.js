@@ -18,10 +18,20 @@ $(document).ready(function(){
 
 	$('.owl-carousel').owlCarousel({
 	    items:4,
-		itemsDesktop:[1000,4],
-		itemsDesktopSmall:[900,3],
-		itemsTablet:[600,2],
-		itemsMobile:[480,1]
+	    responsive:{
+	        0:{
+	            items:1
+	        },
+	        480:{
+	            items:2
+	        },
+	        780:{
+	            items:3
+	        },
+	        1000:{
+	            items:4
+	        }
+	    }
 	});
 
 	$("[data-fancybox]").fancybox();

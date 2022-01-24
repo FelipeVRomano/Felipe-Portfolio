@@ -382,6 +382,11 @@ footer ul {
 	font-weight: bold;
 }
 
+.aboutText p{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
 .modal-body{
 	padding: 10px 15px;
 }
@@ -406,3 +411,5 @@ footer ul {
 	opacity: 1;
 	pointer-events: all;
 }
+
+

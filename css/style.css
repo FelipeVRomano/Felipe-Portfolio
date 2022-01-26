@@ -340,8 +340,8 @@ footer ul {
 }
 
 .popup {
-	position: fixed;
-	top: 50%;
+	position: absolute;
+	top: 190%;
 	left: 50%;
 	transform: translate(-50%, -50%) scale(0);
 	-webkit-transition: all 0.3s ease-in-out, 0.5s;
@@ -352,7 +352,6 @@ footer ul {
 	border-radius: 10px;
 	z-index: 1002;
 	background-color: white;
-	width: 500px;
 	max-width: 80%;
 }
 
@@ -371,6 +370,8 @@ footer ul {
 .modal-header .title{
 	font-size: 1.25rem;
 	font-weight: bold;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .modal-header .close-button{
@@ -388,7 +389,7 @@ footer ul {
 }
 
 .modal-body{
-	padding: 10px 15px;
+	margin: 20px;
 }
 
 #overlay{

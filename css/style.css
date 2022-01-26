@@ -314,12 +314,12 @@ footer li a{
 }
 
 footer .linkedin{
-	background: url(../img/icons/linkedIn.png) center no-repeat #444749;
+	background: url(../img/icons/linkedin.png) center no-repeat #444749;
 	background-size: 75%;
 }
 
 footer .linkedin:hover{
-	background-color: #fff;
+	background-color: #3498db;
 }
 
 footer .mail{
@@ -328,7 +328,7 @@ footer .mail{
 }
 
 footer .mail:hover{
-	background-color: #fff;
+	background-color: #e74c3c;
 }
 
 footer li{

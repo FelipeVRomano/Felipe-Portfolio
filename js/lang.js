@@ -18,5 +18,15 @@ function changeLanguage(lang) {
     .catch(error => console.error('Erro ao carregar o idioma:', error));
 }
 
-document.getElementById('pt-btn').addEventListener('click', () => changeLanguage('pt'));
-document.getElementById('en-btn').addEventListener('click', () => changeLanguage('en'));
+function detectLanguage() {
+  const userLang = navigator.language || navigator.userLanguage; // Detecta o idioma do navegador
+  if (userLang.startsWith('pt')) {
+    changeLanguage('pt');
+  } else {
+    changeLanguage('en');
+  }
+}
+
+window.onload = function() {
+  detectLanguage();
+};

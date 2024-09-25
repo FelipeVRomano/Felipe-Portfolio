@@ -430,3 +430,18 @@ footer ul {
 	margin-bottom: 10px;
 }
 
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+button img {
+  width: 30px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+button img:hover {
+  transform: scale(1.1);
+}

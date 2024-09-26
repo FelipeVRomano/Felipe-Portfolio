@@ -125,6 +125,7 @@ $(document).ready(function(){
 		if(popup == null) return;
 
 		popup.classList.add('active');
+    	document.body.classList.add('no-scroll');
 		overlay.classList.add('active');
 	}
 
@@ -132,6 +133,7 @@ $(document).ready(function(){
 		if(popup == null) return;
 
 		popup.classList.remove('active');
+        document.body.classList.remove('no-scroll');
 		overlay.classList.remove('active');
 	}
 });

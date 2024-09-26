@@ -172,7 +172,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4{
 }
 
 .skillsHeader{
-	margin-bottom: 50px;
+	margin-bottom: 60px;
 }
 
 .skillsIcon {
@@ -231,7 +231,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4{
 	background: none;
 }
 
-.items .item:hover img{
+.items .item:hover img {
 	-webkit-transform:  scale(1.05, 1.05);
 	-moz-transform:  scale(1.05, 1.05);
 	-o-transform:  scale(1.05, 1.05);
@@ -241,6 +241,38 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4{
 
 .items{
 	padding: 0;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlayP {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.overlayP p {
+    margin: 0;
+    font-size: 1em;
+    opacity:  .9;
+}
+
+.items .item:hover .overlayP p{
+	opacity: 1;
 }
 
 .copyrightSection{
@@ -371,6 +403,10 @@ footer li{
 
 footer ul {
 	padding-right: 30px;
+}
+
+body.no-scroll {
+    overflow: hidden; /* Bloqueia o scroll na página */
 }
 
 .popup {

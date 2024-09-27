@@ -449,12 +449,26 @@ footer .mail:hover{
 	background-color: #e74c3c;
 }
 
+footer .github{
+	background: url(../img/icons/mail.png) center no-repeat #444749;
+	background-size: 75%;
+}
+
+footer .github:hover{
+	background-color: #1e272e;
+}
+
 footer li{
 	display: inline-block;
 }
 
 footer ul {
 	padding-right: 30px;
+}
+
+.contactDef{
+	margin-top: 15px;
+	margin-bottom:15px;
 }
 
 body.no-scroll {

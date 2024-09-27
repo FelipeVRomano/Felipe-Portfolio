@@ -255,14 +255,34 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4{
     display: block;
 }
 
+.project-name {
+    padding-left: 10px; 
+    margin: 0; 
+    flex: 1; 
+    text-align: left;
+}
+
+.icons-container {
+    display: flex;
+    gap: 10px; 
+}
+
+.icon {
+    width: 24px; 
+    height: 24px;
+    padding-right: 10px;
+}
+
 .overlayP {
     position: absolute;
     bottom: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.4); 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px;
     color: #fff;
-    text-align: center;
-    padding: 10px 0;
 }
 
 .overlayP p {

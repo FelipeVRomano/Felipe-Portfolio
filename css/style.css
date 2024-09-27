@@ -295,30 +295,29 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4{
 	opacity: 1;
 }
 
-.open-popup-btn {
+.items .item .open-popup-btn {
     position: absolute;
-    top: 50%;
-    float: left;
-    left: -200px;
+    top: 45%;
+    left: -50%;
     margin: -20px auto 0 -47px;
+    margin-top: 9px;
     text-align: center;
     z-index: 3;
     color: #fff;
-    font-size: 20px;
-    margin-top: 9px;
-    border: none;
+    font-size: 20px; 
     cursor: pointer;
+   	background-color: rgb(189, 195, 199, 0.2);
+	border: 2px solid #bdc3c7;
 
-	-webkit-transition: all 0.2s ease-in-out, 1s;
-	-moz-transition:  all 0.2s ease-in-out, 1s;
-	-ms-transition:  all 0.2s ease-in-out, 1s;
-	transition: all 0.2s ease-in-out, 1s;
+	-webkit-transition: all 0.3s ease-in-out, 1s;
+	-moz-transition:  all 0.3s ease-in-out, 1s;
+	-ms-transition:  all 0.3s ease-in-out, 1s;
+	transition: all 0.3s ease-in-out, 1s;
 }
 
 .items .item:hover .open-popup-btn{
 	left: 50%;
 }
-
 
 .imageOverlay {
 	width: 100%;

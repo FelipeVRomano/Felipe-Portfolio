@@ -50,14 +50,14 @@ body{
 
 .aboutContainer {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between; 
+    align-items: flex-start;
     text-align: center;
     padding: 50px;
     max-width: 1200px;
     margin: 0 auto;
     margin-top: -50px;
-    gap: 30px;
+    gap: 20px;
 }
 
 .profile {
@@ -65,18 +65,25 @@ body{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    max-width: 300px;
+    margin-top: -70px;
 }
 
 .profile-img {
+	margin-bottom: 50px;
     width: 100px; 
     height: auto;
     border-radius: 50%;
 }
 
+.profile h5, .profile h6 {
+    margin: 10px 0; 
+}
+
 .description {
     max-width: 600px;
     text-align: left;
-    padding-left: 50px;
+    padding-left: 100px;
 }
 
 @media (max-width: 768px) {
@@ -581,4 +588,34 @@ body.no-scroll {
 
 .owl-dots{
 	margin-bottom: 10px;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 50px; /* Padding da borda inferior */
+  left: 50%;
+  transform: translateX(-50%); /* Centraliza horizontalmente */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scroll-indicator .arrow {
+  width: 30px; 
+  height: auto;
+  margin: -2px;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px); 
+  }
+}
+
+.scroll-indicator .arrow:nth-child(2) {
+  animation: bounce 1.5s infinite;
 }

@@ -37,7 +37,7 @@ body{
 }
 
 .titleMessage .heading .main {
-	font-size: 50px;
+	font-size: 45px;
 }
 
 .titleMessage .heading .sub {
@@ -502,11 +502,6 @@ body.no-scroll {
 	font-weight: bold;
 }
 
-.aboutText p{
-	padding-left: 15px;
-	padding-right: 15px;
-}
-
 .modal-body-game{
 	margin: 20px;
 }
@@ -542,9 +537,9 @@ body.no-scroll {
 
 .scroll-indicator {
   position: absolute;
-  bottom: 50px; /* Padding da borda inferior */
+  bottom: 50px; 
   left: 50%;
-  transform: translateX(-50%); /* Centraliza horizontalmente */
+  transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;

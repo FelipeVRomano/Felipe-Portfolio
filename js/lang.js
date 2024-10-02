@@ -3,6 +3,8 @@ const translations = {
   en: './lang/en.json'
 };
 
+let typed;
+
 function changeLanguage(lang) {
   fetch(translations[lang])
     .then(response => response.json())
@@ -12,14 +14,33 @@ function changeLanguage(lang) {
       document.getElementById('portfolioL').textContent = data.portfolioL;
       document.getElementById('contactL').textContent = data.contactL;
       document.getElementById('skillsL').textContent = data.skillsL;
+      document.getElementById('aboutInt').textContent = data.aboutIntL;
       document.getElementById('aboutIntL').textContent = data.aboutIntL;
       document.getElementById('aboutSecL').textContent = data.aboutSecL;
+
+      updateTypedText(data.typedText);
     })
     .catch(error => console.error('Erro ao carregar o idioma:', error));
 }
 
+function updateTypedText(texts) {
+  if (typed) {
+    typed.destroy();
+  }
+
+  typed = new Typed(".typed", {
+    strings: texts,  
+    typeSpeed: 70,
+    loop: true,
+    startDelay: 1000,
+    backDelay: 5000,
+    showCursor: false
+  });
+}
+
+
 function detectLanguage() {
-  const userLang = navigator.language || navigator.userLanguage; // Detecta o idioma do navegador
+  const userLang = navigator.language || navigator.userLanguage; 
   if (userLang.startsWith('pt')) {
     changeLanguage('pt');
   } else {
@@ -30,3 +51,7 @@ function detectLanguage() {
 window.onload = function() {
   detectLanguage();
 };
+
+document.addEventListener('DOMContentLoaded', function() {
+  detectLanguage();
+});

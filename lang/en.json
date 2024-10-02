@@ -1,9 +1,11 @@
 {
-  "titleL": "PROFILE",
+  "titleL": "HOME",
   "aboutL": "ABOUT",
   "portfolioL": "PROJECTS",
   "contactL": "CONTACT",
   "skillsL": "SKILLS",
-  "aboutIntL": "HI! I'm graduated Game Designer likiiiiiiiiiiing",
-  "aboutSecL": "In my experience!"
+  "aboutInt": "I'm Felipe Romano!",
+  "aboutIntL": "HI! I'm graduated Game Designer",
+  "aboutSecL": "In my experience!",
+  "typedText": ["Game Developer"]
 }

@@ -27,6 +27,7 @@ $(document).ready(function(){
 
 	$('.owl-carousel').owlCarousel({
 	    items:4,
+	    margin:15,
 	    responsive:{
 	        0:{
 	            items:1

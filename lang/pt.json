@@ -7,5 +7,13 @@
   "aboutInt": "Eu sou Felipe Romano!",
   "aboutIntL": "Olá! Sou o Felipe Vicente Romano. No final de 2021, conclui minha graduação em Design de Games na Universidade Anhembi Morumbi. Tive minha primeira experiência profissional no começo de 2021, quando tive a chance de fazer um estágio de programação na Arch Works. Depois, trabalhei como Programador Júnior na QUByte Interactive, fazendo porting de jogos para plataformas como Xbox, PlayStation e Switch.",
   "aboutSecL": "Em minha experiência como desenvolvedor, sempre gostei do desafio que é começar e terminar um projeto, pois isto me motiva a sempre melhorar para ser capaz de realizá-lo. Em todos projetos que faço, gosto de arriscar e aprender coisas novas, seja uma ferramenta simples ou mais avançada, pois acredito que assim me tornarei um profissional melhor.",
+  "skillsL1": "Utilizo muito para desenvolver meus projetos.",
+  "skillsL2": "Utilizo muito nos meus projetos da Unity.",
+  "skillsL3": "Desenvolvi projetos de estudo na engine.",
+  "skillsL4": "Utilizei nos meus projetos de estudo na Unreal.",
+  "skillsL5": "Em todos projetos utilizo para facilitar o desenvolvimento.",
+  "skillsL6": "Em todos projetos utilizo para facilitar a organização.",
+  "skillsL7": "Tive a oportunidade no meu estágio de implementar funcionalidades.",
+  "skillsL8": "Fiz o porting de jogos para Xbox, PlayStation e Switch.",
   "typedText": ["Game Developer"]
 }

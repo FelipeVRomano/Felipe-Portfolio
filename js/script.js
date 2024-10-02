@@ -19,9 +19,15 @@ $(document).ready(function() {
 	$('#slides').superslides({
 		animation: 'fade',
 		play: 5000,
-		pagination: false
+		pagination: false,
+		inherit_width_from: '#slides',
+        inherit_height_from: '#slides'
 	});
 });
+
+$(window).resize(function() {
+    $('#slides').css('height', '95vh'); // Define a altura novamente, se necessário
+  }).trigger('resize');
 
 $(document).ready(function(){
 

@@ -33,7 +33,7 @@ body{
 }
 
 .main {
-        margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .titleMessage .heading .main {
@@ -127,7 +127,7 @@ h1, .h1, h2, .h2, h4, .h4{
 	text-align: center;
 	border-radius: 10px;
 	padding: 10px 0px;
-	margin-bottom: 35px;
+	margin-bottom: 40px;
 	background-color: rgba(189, 195, 199,0.5);
 }
 
@@ -370,7 +370,8 @@ footer li a{
 	display: block;
 	text-decoration: none;
 	border-bottom: none;
-	padding: 18px;
+	padding: 25px;
+	margin-left: 5px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	-ms-border-radius: 3px;
@@ -400,12 +401,12 @@ footer .mail:hover{
 }
 
 footer .github{
-	background: url(../img/icons/mail.png) center no-repeat #444749;
+	background: url(../img/icons/github.png) center no-repeat #444749;
 	background-size: 75%;
 }
 
 footer .github:hover{
-	background-color: #1e272e;
+	background-color: #84817a;
 }
 
 footer li{
@@ -417,8 +418,8 @@ footer ul {
 }
 
 .contactDef{
-	margin-top: 15px;
-	margin-bottom:15px;
+	margin-top: 10px;
+	margin-bottom:20px;
 }
 
 body.no-scroll {

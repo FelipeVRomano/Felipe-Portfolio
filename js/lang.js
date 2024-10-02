@@ -25,7 +25,8 @@ function changeLanguage(lang) {
       document.getElementById('skillsL6').textContent = data.skillsL6;
       document.getElementById('skillsL7').textContent = data.skillsL7;
       document.getElementById('skillsL8').textContent = data.skillsL8;
-
+      document.getElementById('contactDesc').textContent = data.contactDesc;
+      
       updateTypedText(data.typedText);
     })
     .catch(error => console.error('Erro ao carregar o idioma:', error));

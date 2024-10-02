@@ -200,9 +200,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4{
 	padding: 0;
 }
 
-.image-container {
+.items .image-container {
     position: relative;
-    display: inline-block;
+    display: block;
     overflow: hidden;
 }
 

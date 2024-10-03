@@ -26,6 +26,10 @@ function changeLanguage(lang) {
       document.getElementById('skillsL7').textContent = data.skillsL7;
       document.getElementById('skillsL8').textContent = data.skillsL8;
       document.getElementById('contactDesc').textContent = data.contactDesc;
+      document.getElementById('todosP').textContent = data.todosP;
+      document.getElementById('professionalP').textContent = data.professionalP;
+      document.getElementById('pessoalP').textContent = data.pessoalP;
+      document.getElementById('vejaMaisP').textContent = data.vejaMaisP;
       
       updateTypedText(data.typedText);
     })

@@ -262,12 +262,12 @@ h1, .h1, h2, .h2, h4, .h4{
     position: absolute;
     top: 45%;
     left: -50%;
-    margin: -20px auto 0 -47px;
-    margin-top: 9px;
+    margin: 0 auto 0 -50px;
+    padding: 7.5px;
     text-align: center;
     z-index: 3;
     color: #fff;
-    font-size: 20px; 
+    font-size: 25px; 
     cursor: pointer;
    	background-color: rgb(189, 195, 199, 0.2);
 	border: 2px solid #bdc3c7;
@@ -285,7 +285,7 @@ h1, .h1, h2, .h2, h4, .h4{
 .imageOverlay {
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.8);
 	position: absolute;
 	left: 0px;
 	top: 0px;
@@ -441,7 +441,7 @@ body.no-scroll {
 }
 
 .filter a {
-	color: #bdc3c7;
+	color: #888c8f;
 	border: 1px solid #bdc3c7;
 	padding: 10px 18px;
 	display: block;
@@ -463,6 +463,44 @@ body.no-scroll {
 	width: 100%;
 }
 
+.gamePlatform .iconPlatform img {
+    width: auto; 
+    height: auto; 
+    display: block; 
+}
+
+.gamePlatform .iconPlatform {
+	display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.gamePlatform .iconPlatform .overlayPlatform {
+    width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.3);
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	opacity: 0;
+}
+
+.gamePlatform .iconPlatform:hover .overlayPlatform {
+    opacity: 1;
+}
+
+.gamePlatform li a {
+	margin-top: 20px;
+}
+
+.gamePlatform li{
+	display: inline-block;
+}
+
+.gamePlatform ul{
+	padding-right: 20px;
+}
+
 .popup {
 	position: fixed;
     top: 50%;
@@ -476,7 +514,7 @@ body.no-scroll {
 	border-radius: 10px;
 	z-index: 1002;
 	background-color: #f7f1e3;
-	max-width: 100%;
+	max-width: 40%;
 	max-height: calc(100vh - 200px);
     overflow-y: auto;
 }
@@ -512,10 +550,31 @@ body.no-scroll {
 
 .modal-body-game{
 	margin: 20px;
+	font-size: 18px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 39.375%;
+    left: 15%;
+    max-width: 70%;
+    height: 70%;
+    overflow: hidden;
+    background: #000;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .game-images{
 	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 #overlay{

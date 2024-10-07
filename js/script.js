@@ -26,7 +26,7 @@ $(document).ready(function() {
 });
 
 $(window).resize(function() {
-    $('#slides').css('height', '95vh'); // Define a altura novamente, se necessário
+    $('#slides').css('height', '95vh');
   }).trigger('resize');
 
 $(document).ready(function(){
@@ -92,6 +92,15 @@ $(document).ready(function(){
 		}
 
 	}
+
+	$("#navigation li a").click(function(e) {
+		e.preventDefault();
+
+		var targetElement = $(this).attr("href");
+		var targetPosition = $(targetElement).offset().top;
+		$("html, body").animate({ scrollTop: targetPosition - 50 }, "slow");
+
+	});
 
 	const openModalButtons = document.querySelectorAll('[data-modal-target]');
 	const closeModalButtons = document.querySelectorAll('[data-close-button]');

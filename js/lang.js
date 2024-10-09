@@ -29,7 +29,17 @@ function changeLanguage(lang) {
       document.getElementById('todosP').textContent = data.todosP;
       document.getElementById('professionalP').textContent = data.professionalP;
       document.getElementById('pessoalP').textContent = data.pessoalP;
-      document.getElementById('vejaMaisP').textContent = data.vejaMaisP;
+      document.getElementById('GamePrincipal').textContent = data.GamePrincipal;
+      document.getElementById('AliraDescription').textContent = data.AliraDescription;
+      document.getElementById('AliraContribution').textContent = data.AliraContribution;
+      document.getElementById('BreakersDescription').textContent = data.BreakersDescription;
+      document.getElementById('BreakersContribution').textContent = data.BreakersContribution;
+      document.getElementById('ErgophobiaDescription').textContent = data.ErgophobiaDescription;
+      document.getElementById('ErgophobiaContribution').textContent = data.ErgophobiaContribution;
+      document.getElementById('MissaoIngloriaDescription').textContent = data.MissaoIngloriaDescription;
+      document.getElementById('MissaoIngloriaContribution').textContent = data.MissaoIngloriaContribution;
+      document.getElementById('ResidiuumDescription').textContent = data.ResidiuumDescription;
+      document.getElementById('ResidiuumContribution').textContent = data.ResidiuumContribution;
       
       updateTypedText(data.typedText);
     })

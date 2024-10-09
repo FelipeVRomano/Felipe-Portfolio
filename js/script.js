@@ -6,7 +6,7 @@ $(window).on("load", function() {
 
 // Redimensionamento de slides
 $(window).resize(function() {
-    $('#slides').css('height', '95vh');
+    $('#slides').css('height', '96vh');
 }).trigger('resize');
 
 // Função de navegação sticky

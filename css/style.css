@@ -446,7 +446,7 @@ footer ul {
 
 .contactDef2{
 	margin-top: 2px;
-	font-size: 20px;
+	font-size: 19px;
 	margin-bottom:25px;
 }
 
@@ -504,9 +504,9 @@ body.no-scroll {
 }
 
 .copyrightSection {
-	background-color: #2d3436;
+	background-color: #343a40;
 	color: #fff;
-	padding: 30px 5px;
+	padding: 25px 5px;
 }
 
 .copyrightSection p {

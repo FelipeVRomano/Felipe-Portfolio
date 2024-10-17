@@ -3,8 +3,6 @@ const translations = {
   en: './lang/en.json'
 };
 
-let typed;
-
 function changeLanguage(lang) {
   fetch(translations[lang])
     .then(response => response.json())
@@ -14,7 +12,7 @@ function changeLanguage(lang) {
       document.getElementById('portfolioL').textContent = data.portfolioL;
       document.getElementById('contactL').textContent = data.contactL;
       document.getElementById('skillsL').textContent = data.skillsL;
-      document.getElementById('aboutInt').textContent = data.aboutIntL;
+      document.getElementById('aboutInt').textContent = data.aboutInt;
       document.getElementById('aboutIntL').textContent = data.aboutIntL;
       document.getElementById('aboutSecL').textContent = data.aboutSecL;
       document.getElementById('skillsL1').textContent = data.skillsL1;
@@ -26,9 +24,12 @@ function changeLanguage(lang) {
       document.getElementById('skillsL7').textContent = data.skillsL7;
       document.getElementById('skillsL8').textContent = data.skillsL8;
       document.getElementById('contactDesc').textContent = data.contactDesc;
+      document.getElementById('contactDesc2').textContent = data.contactDesc2;
       document.getElementById('todosP').textContent = data.todosP;
       document.getElementById('professionalP').textContent = data.professionalP;
       document.getElementById('pessoalP').textContent = data.pessoalP;
+      document.getElementById('demoP').textContent = data.demoP;
+      document.getElementById('vejaMaisP').textContent = data.vejaMaisP;
       document.getElementById('GamePrincipal').textContent = data.GamePrincipal;
       document.getElementById('AliraDescription').textContent = data.AliraDescription;
       document.getElementById('AliraContribution').textContent = data.AliraContribution;
@@ -40,26 +41,48 @@ function changeLanguage(lang) {
       document.getElementById('MissaoIngloriaContribution').textContent = data.MissaoIngloriaContribution;
       document.getElementById('ResidiuumDescription').textContent = data.ResidiuumDescription;
       document.getElementById('ResidiuumContribution').textContent = data.ResidiuumContribution;
+
+      document.getElementById('AliraContribution').innerHTML = `
+        <strong id="GamePrincipal">${GamePrincipal}</strong> ${AliraContribution}
+      `;
+      document.getElementById('BreakersContribution').innerHTML = `
+        <strong id="GamePrincipal">${GamePrincipal}</strong> ${BreakersContribution}
+      `;
+      document.getElementById('ErgophobiaContribution').innerHTML = `
+        <strong id="GamePrincipal">${GamePrincipal}</strong> ${ErgophobiaContribution}
+      `;
+      document.getElementById('MissaoIngloriaContribution').innerHTML = `
+        <strong id="GamePrincipal">${GamePrincipal}</strong> ${MissaoIngloriaContribution}
+      `;
+      document.getElementById('ResidiuumContribution').innerHTML = `
+        <strong id="GamePrincipal">${GamePrincipal}</strong> ${ResidiuumContribution}
+      `;
       
       updateTypedText(data.typedText);
     })
     .catch(error => console.error('Erro ao carregar o idioma:', error));
 }
 
+$(document).ready(function() {
+  let typed;
+
 function updateTypedText(texts) {
   if (typed) {
     typed.destroy();
   }
 
-  typed = new Typed(".typed", {
-    strings: texts,  
+  typed = new Typed(".sub.typed", {
+    strings: typedText,  
     typeSpeed: 70,
+    backSpeed: 30,
     loop: true,
     startDelay: 1000,
     backDelay: 5000,
     showCursor: false
   });
 }
+
+});
 
 
 function detectLanguage() {

@@ -7,7 +7,7 @@
   "aboutInt": "Hello! I'm Felipe Romano.",
   "aboutIntL": "Game Developer with experience in mobile development, porting, and client projects. Graduated in Game Design from Anhembi Morumbi University, I am constantly seeking to enhance my knowledge through courses and online materials. ",
   "aboutSecL": "Passionate about the challenge of creating games, I value every stage of the process, from planning to publishing.",
-  "skillsL1": "I developed several projects using Unity, including porting to consoles and mobile.",
+  "skillsL1": "I developed several projects, including porting to consoles and mobile.",
   "skillsL2": "I programmed in C# while developing projects in Unity.",
   "skillsL3": "I developed study projects and prototypes using the engine.",
   "skillsL4": "I programmed in C++ while developing projects in Unreal.",
@@ -21,7 +21,7 @@
   "professionalP": "Professional",
   "pessoalP": "Personal",
   "demoP": "Tech Demo",
-  "vejaMaisP": "See More",
+  "vejaMaisP": "Show More",
   "GamePrincipal": "My main contributions =>",
   "AliraDescription": "is a 3D platform game about an emotional journey of a teenager and her grief over the loss of her mother. While isolating herself in the forest, she discovers magical places that can bring her mother back. Alira is an academic project done at Unity." ,
   "AliraContribution": "I was responsible for the player mechanics and puzzles/challenges. I created organized and separate systems, script optimization and best practices.",
@@ -33,5 +33,5 @@
   "MissaoIngloriaContribution": "I developed a player system for a first-person game, with integration of stealth and shooting mechanics.",
   "ResidiuumDescription": "is a mobile game developed by Iron Games, a platform and hack and slash that will challenge your combat skills to explore the Auric land. Project made in Unity and released for mobile platforms.",
   "ResidiuumContribution": "Development of a complex AI using state machine, optimized for performance in mobile games. Creation, configuration and testing in a project with integration with Google Play Services features.",
-  "typedText": ["Game Developer"]
+  "typedText": ["Game Developer", "Programmer"]
 }

@@ -7,7 +7,7 @@
   "aboutInt": "Olá! Eu sou o Felipe Romano.",
   "aboutIntL": "Game Developer com experiência em desenvolvimento mobile, porting para consoles e projetos para clientes. Graduado em Game Design pela Anhembi Morumbi, busco constantemente aprimorar meu conhecimento por meio de cursos e materiais online.",
   "aboutSecL": "Movido pelo desafio de criar jogos, valorizo cada etapa do processo, do planejamento à publicação.",
-  "skillsL1": "Desenvolvi vários projetos na engine, incluindo porting para consoles e mobile.",
+  "skillsL1": "Desenvolvi vários projetos, incluindo porting para consoles e mobile.",
   "skillsL2": "Desenvolvi projetos e protótipos de estudo na engine.",
   "skillsL3": "Programei em C++ desenvolvendo projetos na Unreal.",
   "skillsL4": "Utilizei nos meus projetos de estudo na Unreal.",
@@ -33,5 +33,5 @@
   "MissaoIngloriaContribution": "Desenvolvimento de um player para jogo em primeira pessoa, com integração de mecânicas de stealth e tiro.",
   "ResidiuumDescription": "é um jogo mobile desenvolvido pela Iron Games de plataforma e hack and slash que irá desafiar suas habilidades de combate para explorar a terra Áurica. Projeto feito na Unity e lançado para plataformas mobile.",
   "ResidiuumContribution": "Desenvolvimento de uma IA complexa utilizando state machine, otimizada para desempenho em jogos mobile. Criação, configuração e testes em um projeto com integração ao Google Play Services.",
-  "typedText": ["Game Developer"]
+  "typedText": ["Desenvolvedor de jogos", "Programador"]
 }

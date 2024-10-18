@@ -3,15 +3,21 @@ const translations = {
   en: './lang/en.json'
 };
 
+let typed;
+
 function changeLanguage(lang) {
   fetch(translations[lang])
     .then(response => response.json())
     .then(data => {
       document.getElementById('titleL').textContent = data.titleL;
       document.getElementById('aboutL').textContent = data.aboutL;
+      document.getElementById('aboutS').textContent = data.aboutL;
       document.getElementById('portfolioL').textContent = data.portfolioL;
+      document.getElementById('portfolioS').textContent = data.portfolioL;
       document.getElementById('contactL').textContent = data.contactL;
+      document.getElementById('contactS').textContent = data.contactL;
       document.getElementById('skillsL').textContent = data.skillsL;
+      document.getElementById('skillsS').textContent = data.skillsL;
       document.getElementById('aboutInt').textContent = data.aboutInt;
       document.getElementById('aboutIntL').textContent = data.aboutIntL;
       document.getElementById('aboutSecL').textContent = data.aboutSecL;
@@ -28,51 +34,73 @@ function changeLanguage(lang) {
       document.getElementById('todosP').textContent = data.todosP;
       document.getElementById('professionalP').textContent = data.professionalP;
       document.getElementById('pessoalP').textContent = data.pessoalP;
-      document.getElementById('demoP').textContent = data.demoP;
-      document.getElementById('vejaMaisP').textContent = data.vejaMaisP;
-      document.getElementById('GamePrincipal').textContent = data.GamePrincipal;
-      document.getElementById('AliraDescription').textContent = data.AliraDescription;
-      document.getElementById('AliraContribution').textContent = data.AliraContribution;
-      document.getElementById('BreakersDescription').textContent = data.BreakersDescription;
-      document.getElementById('BreakersContribution').textContent = data.BreakersContribution;
-      document.getElementById('ErgophobiaDescription').textContent = data.ErgophobiaDescription;
-      document.getElementById('ErgophobiaContribution').textContent = data.ErgophobiaContribution;
-      document.getElementById('MissaoIngloriaDescription').textContent = data.MissaoIngloriaDescription;
-      document.getElementById('MissaoIngloriaContribution').textContent = data.MissaoIngloriaContribution;
-      document.getElementById('ResidiuumDescription').textContent = data.ResidiuumDescription;
-      document.getElementById('ResidiuumContribution').textContent = data.ResidiuumContribution;
+      /*document.getElementById('demoP').textContent = data.demoP;*/
+
+      document.querySelectorAll('.translate[data-translation="vejaMaisP"]').forEach((element) => {
+        element.textContent = data.vejaMaisP;
+      });
 
       document.getElementById('AliraContribution').innerHTML = `
-        <strong id="GamePrincipal">${GamePrincipal}</strong> ${AliraContribution}
+        <strong>${data.GamePrincipal}</strong> ${data.AliraContribution}
       `;
+
+      document.getElementById('AliraDescription').innerHTML = `
+        <strong>Alira</strong> ${data.AliraDescription}
+      `;
+
       document.getElementById('BreakersContribution').innerHTML = `
-        <strong id="GamePrincipal">${GamePrincipal}</strong> ${BreakersContribution}
+        <strong>${data.GamePrincipal}</strong> ${data.BreakersContribution}
       `;
+
+      document.getElementById('BreakersDescription').innerHTML = `
+        <strong>Breakers Collection</strong> ${data.BreakersDescription}
+      `;
+
       document.getElementById('ErgophobiaContribution').innerHTML = `
-        <strong id="GamePrincipal">${GamePrincipal}</strong> ${ErgophobiaContribution}
+        <strong>${data.GamePrincipal}</strong> ${data.ErgophobiaContribution}
       `;
+
+      document.getElementById('ErgophobiaDescription').innerHTML = `
+        <strong>Ergophobia</strong> ${data.ErgophobiaDescription}
+      `;
+
       document.getElementById('MissaoIngloriaContribution').innerHTML = `
-        <strong id="GamePrincipal">${GamePrincipal}</strong> ${MissaoIngloriaContribution}
+        <strong>${data.GamePrincipal}</strong> ${data.MissaoIngloriaContribution}
       `;
+
+      document.getElementById('MissaoIngloriaDescription').innerHTML = `
+        <strong>Missão Inglória</strong> ${data.MissaoIngloriaDescription}
+      `;
+
       document.getElementById('ResidiuumContribution').innerHTML = `
-        <strong id="GamePrincipal">${GamePrincipal}</strong> ${ResidiuumContribution}
+        <strong>${data.GamePrincipal}</strong> ${data.ResidiuumContribution}
       `;
+
+      document.getElementById('ResidiuumDescription').innerHTML = `
+        <strong>Residiuum</strong> ${data.ResidiuumDescription}
+      `;
+
       
       updateTypedText(data.typedText);
     })
     .catch(error => console.error('Erro ao carregar o idioma:', error));
 }
 
-$(document).ready(function() {
-  let typed;
-
 function updateTypedText(texts) {
-  if (typed) {
-    typed.destroy();
+
+  if (texts === null || texts === undefined) {
+    console.log("A variável é nula ou indefinida. Retornando...");
+    return; // Retorna e não prossegue
   }
 
+  if (typed) {
+      console.log("Preciso destruir a outra instancia...");
+      typed.destroy(); // Destrua a instância anterior, se existir
+    }
+
+  console.log(`Meu textinho é ${texts}`);
   typed = new Typed(".sub.typed", {
-    strings: typedText,  
+    strings: texts,  
     typeSpeed: 70,
     backSpeed: 30,
     loop: true,
@@ -81,9 +109,6 @@ function updateTypedText(texts) {
     showCursor: false
   });
 }
-
-});
-
 
 function detectLanguage() {
   const userLang = navigator.language || navigator.userLanguage; 
